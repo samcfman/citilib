@@ -1,0 +1,121 @@
+<template>
+    <div class="slds-p-around_none slds-m-top_none slds-m-bottom_none slds-m-horizontal_none">
+        <lightning-layout>
+            <lightning-layout-item size="12" class="slds-p-bottom_small">
+                <template if:false={showEdit}>
+                        <p class="citi-field-label">MAILING ADDRESS</p>
+                        <c-citi-address-field-read-mode
+                            address1={address1}
+                            address2={address2}
+                            address3={address3}
+                            city={city}
+                            postal={postCode}
+                        ></c-citi-address-field-read-mode>
+                        <button type="button" onclick={handleEdit} class="citi-action-button" >Edit</button>
+                </template>
+
+
+                <template if:true={showEdit}>
+                    <p class="citi-field-label">MAILING ADDRESS</p>
+                        <c-citi-field-edit-mode
+                            label="Address 1"
+                            value={address1Temp}
+                            onvaluechange={handleValueChangeEvent}
+                        ></c-citi-field-edit-mode> 
+                        <c-citi-field-edit-mode
+                            label="Address 2"
+                            value={address2Temp}
+                            onvaluechange={handleValueChangeEvent}
+                        ></c-citi-field-edit-mode>   
+                        <c-citi-field-edit-mode
+                            label="Address 3"
+                            value={address3Temp}
+                            onvaluechange={handleValueChangeEvent}
+                        ></c-citi-field-edit-mode>    
+                        <c-citi-field-edit-mode
+                            label="City"
+                            value={cityTemp}
+                            onvaluechange={handleValueChangeEvent}
+                        ></c-citi-field-edit-mode>                                                     
+                        <c-citi-field-edit-mode
+                            label="Postal Code"
+                            value={postCodeTemp}
+                            onvaluechange={handleValueChangeEvent}
+                        ></c-citi-field-edit-mode> 
+<!--                        <c-citi-display-text
+                            text={uploadDescription}
+                        ></c-citi-display-text>                                                     
+                        <c-citi-file-upload
+                            relatedrecordid={relatedRecordId}
+                            description={uploadLabel}
+                            onfileupload={handleFileUpload}
+                        ></c-citi-file-upload>
+-->                    
+                    <button type="button" onclick={handleApply} class="citi-edit-button">OK</button>
+                    <button type="button" onclick={handleCancel} class="citi-edit-button">Cancel</button>
+                </template>
+                
+                
+            </lightning-layout-item>
+        </lightning-layout> 
+    </div>       
+
+
+
+    <!-- div class="slds-p-around_none slds-m-top_none slds-m-bottom_none slds-m-horizontal_none citiForm">
+        <lightning-layout>
+            <lightning-layout-item size="12" padding="none">
+                <template if:false={showEdit}>
+                    <div class=" slds-p-around_medium">
+                        MAILING ADDRESS
+                        <div class="slds-p-around_small lgc-bg">
+                            <lightning-tile style="background-color:white;padding: 15px;">
+                                <p class="slds-truncate" title="7 Members">{address1},{address2},{address3}</p>
+                                <p class="slds-truncate" title="7 Members">{city},{postCode}</p>
+                            </lightning-tile>
+                        </div>       
+                        <lightning-button label="Edit" onclick={handleEdit}></lightning-button>          
+                    </div>
+                </template>
+                <template if:true={showEdit}>
+                    <div class=" slds-p-around_medium">
+                        MAILING ADDRESS
+                        <div class="slds-p-around_small lgc-bg">
+                            <lightning-tile style="background-color:rgb(249, 249, 250);padding: 10px;" label="Address1">
+                                <input style="background-color:rgb(249, 249, 250);border:none;" value={address1Temp} id="address1" onchange={handleOnInputChange}></input>
+ 
+                            </lightning-tile>
+                            <lightning-tile style="background-color:rgb(249, 249, 250);padding: 10px;" label="Address2">
+                                <input style="background-color:rgb(249, 249, 250);border:none;" value={address2Temp} id="address2" onchange={handleOnInputChange}></input>
+ 
+                            </lightning-tile>
+                            <lightning-tile style="background-color:rgb(249, 249, 250);padding: 10px;" label="Address3">
+                                <input style="background-color:rgb(249, 249, 250);border:none;" value={address3Temp} id="address3" onchange={handleOnInputChange}></input>
+ 
+                            </lightning-tile>
+                            <lightning-tile style="background-color:rgb(249, 249, 250);padding: 10px;" label="City">
+                                <input style="background-color:rgb(249, 249, 250);border:none;" value={cityTemp} id="city" onchange={handleOnInputChange}></input>
+ 
+                            </lightning-tile>
+                            <lightning-tile style="background-color:rgb(249, 249, 250);padding: 10px;" label="Post Code">
+                                <input style="background-color:rgb(249, 249, 250);border:none;" value={postCodeTemp} id="postCode" onchange={handleOnInputChange}></input>
+ 
+                            </lightning-tile>
+                            <c-citi-file-upload></c-citi-file-upload>
+                            <lightning-button-group>
+                                <lightning-button label="Cancel" onclick={btnClose}></lightning-button>&nbsp;&nbsp;
+                                <lightning-button label="Ok" onclick={okClick}></lightning-button>
+                            </lightning-button-group>
+
+                        </div>       
+                    </div>
+
+
+                </template>
+            </lightning-layout-item>
+        </lightning-layout> 
+    </div--> 
+    
+    
+
+</template>

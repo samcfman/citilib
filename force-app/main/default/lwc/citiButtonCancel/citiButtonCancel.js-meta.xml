@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>48.0</apiVersion>
+    <isExposed>true</isExposed>
+    <masterLabel>Citi Cancel Button</masterLabel>
+    <description>Cancel and Go to Home Page</description>
+    <targets>
+        <target>lightningCommunity__Default</target>
+        <target>lightning__FlowScreen</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightning__FlowScreen, lightningCommunity__Default">
+            <property name="buttonlabel" type="String" default="Go to Home" label="Enter the button label"/>
+            <property name="cssstyle" type="String" default="" label="Override the sytle css"/>
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>

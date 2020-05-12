@@ -1,0 +1,17 @@
+<template>
+    <div class="slds-p-around_none slds-m-top_none slds-m-bottom_none slds-m-horizontal_none">
+        <lightning-layout>
+            <lightning-layout-item size="12" class="slds-p-bottom_small">
+
+                <lightning-input class="citi-edit-box" type="text" label="Account" variant="label-hidden" placeholder="Account or credit card number" value={account}></lightning-input>
+                <div class="slds-p-around_medium slds-align_absolute-center citi-text">
+                    -- OR --
+                </div>
+                <lightning-input class="citi-edit-box" type="text" label="UserId" variant="label-hidden" placeholder="User ID" value={userId}></lightning-input>
+                <br>
+                <lightning-input class="citi-edit-box" type="password" label="Password" variant="label-hidden" placeholder="Password" value={password}></lightning-input>
+
+            </lightning-layout-item>
+        </lightning-layout> 
+    </div>
+</template>

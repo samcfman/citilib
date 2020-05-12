@@ -1,0 +1,48 @@
+<template>
+    <div class="slds-p-around_none slds-m-top_none slds-m-bottom_none slds-m-horizontal_none">
+        <lightning-layout>
+            <lightning-layout-item size="12" class="slds-p-bottom_small" >
+                    <template if:false={enterOTP}>
+                        <!--p class="citi-H1">Please authenticate</p -->
+                        <lightning-input class="citiEditBox" type="text" label="Account" variant="label-hidden" placeholder="Account or credit card number" value={cardNumber}></lightning-input>
+
+                        <table>
+                            <tr>
+                                <td><lightning-input class="citicvv" type="text" label="CVV" variant="label-hidden" placeholder="CVV" value={cvv} max-length="3" onchange={handleInput}></lightning-input></td>
+                                <td><a href="https://www.citibank.com" target="_blank" class="slds-p-top_medium">Where to find the number?</a></td>    
+                            </tr>    
+                        </table>
+
+                        <!--div class="slds-text-align_center">
+                            <button type="button" onclick={handleClick} class="citiActionButton" >Send OTP</button>
+                        </div-->                       
+                    </template>
+                        <template if:true={enterOTP}>
+                        <p class="citi-H1">Enter OTP</p> 
+                        
+                        <div style="text-align: center;">
+                            <table>
+                                <tr>
+                                    <td><lightning-input class="citotp" type="text" label="OTP" variant="label-hidden" max-length="1"></lightning-input></td>
+                                    <td><lightning-input class="citotp" type="text" label="OTP" variant="label-hidden" max-length="1"></lightning-input></td>
+                                    <td><lightning-input class="citotp" type="text" label="OTP" variant="label-hidden" max-length="1"></lightning-input></td>
+                                    <td><lightning-input class="citotp" type="text" label="OTP" variant="label-hidden" max-length="1"></lightning-input></td>
+                                    <td><lightning-input class="citotp" type="text" label="OTP" variant="label-hidden" max-length="1"></lightning-input></td>
+                                    <td><lightning-input class="citotp" type="text" label="OTP" variant="label-hidden" max-length="1"></lightning-input></td>
+                                </tr>    
+                            </table>
+                        </div>  
+                        <br>
+                        <br>                      
+                            <c-citi-button-next
+                                buttonlabel="Verify"
+                            ></c-citi-button-next>
+
+                            <a href="https://www.citibank.com" target="_blank" class="slds-p-top_medium">Resend OTP</a>
+
+                        </template>                  
+
+            </lightning-layout-item>
+        </lightning-layout> 
+    </div>
+</template>

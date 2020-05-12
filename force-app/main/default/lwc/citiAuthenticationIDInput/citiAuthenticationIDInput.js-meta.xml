@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>48.0</apiVersion>
+    <isExposed>true</isExposed>
+    <masterLabel>Citi Authentication Input</masterLabel>
+    <description>Input the Account No/User ID and password for authentication</description>
+    <targets>
+        <target>lightning__FlowScreen</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightning__FlowScreen">
+            <property name="account" type="String" label="Account"/>
+            <property name="userId" type="String" label="User ID"/>
+            <property name="password" type="String" label="Password"/>
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>

@@ -1,0 +1,29 @@
+<template>
+    <div class="slds-p-around_none slds-m-top_none slds-m-bottom_none slds-m-horizontal_none">
+        <lightning-layout>
+            <lightning-layout-item size="12" class="slds-p-bottom_small,slds-align_absolute-center">
+                <div style="width:100%">
+                        <table class="slds-align_absolute-center">
+                            <tr>
+                                <td><lightning-input class="citotp" type="text" label="OTP" variant="label-hidden" max-length="1" value={field1} onchange={handleinput}></lightning-input></td>
+                                <td><lightning-input class="citotp" type="text" label="OTP" variant="label-hidden" max-length="1" value={field2}></lightning-input></td>
+                                <td><lightning-input class="citotp" type="text" label="OTP" variant="label-hidden" max-length="1" value={field3}></lightning-input></td>
+                                <td><lightning-input class="citotp" type="text" label="OTP" variant="label-hidden" max-length="1" value={field4}></lightning-input></td>
+                                <td><lightning-input class="citotp" type="text" label="OTP" variant="label-hidden" max-length="1" value={field5}></lightning-input></td>
+                                <td><lightning-input class="citotp" type="text" label="OTP" variant="label-hidden" max-length="1" value={field6}></lightning-input></td> 
+                            </tr>    
+                        </table>    
+                </div>
+                <div>      
+
+                    <c-citi-button-next
+                        buttonlabel="Verify"
+                    ></c-citi-button-next>
+                        
+                    <a href="https://www.citibank.com" target="_blank" class="slds-p-top_medium">Resend OTP</a>
+
+                </div>
+            </lightning-layout-item>
+        </lightning-layout> 
+    </div>          
+</template>

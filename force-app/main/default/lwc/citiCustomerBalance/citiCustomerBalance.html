@@ -1,0 +1,26 @@
+<template>
+    <div class="slds-p-around_none slds-m-top_none slds-m-bottom_none slds-m-horizontal_none">
+        <lightning-layout>
+            <lightning-layout-item size="5" class="slds-p-bottom_small">
+
+                <p style="font:medium;font-weight:bold; color:black">Available Credit</p>
+                <p style="padding-right:3px;"><img src={creditImageURL} width="420" height="420"></p>
+                
+
+            </lightning-layout-item>
+            <lightning-layout-item size="7" class="slds-p-bottom_small">
+                <div class="slds-p-top_large">
+                    <p style="padding: 2px,5px,2px,20px;font:small; color:rgb(138, 138, 138) ">Available credit to spend</p>
+                    <p style="padding: 2px,5px,2px,20px;font:small;font-weight:bold;color:black"><strong>S$ {availableCreditToSpend}</strong></p>
+                    <br/>    
+                    <p style="padding: 2px,5px,2px,20px;font:small; color:rgb(138, 138, 138) ">Total credit limit</p>
+                    <p style="padding: 2px,5px,2px,20px;font:small;font-weight:bold;color:black"><strong>S$ {totalCreditLimit}</strong></p>
+
+                    <br/>
+                    <p style="padding: 2px,5px,2px,20px;font:small; color:rgb(138, 138, 138)">You are eligible for a credit limit of up to S$ {eligibleCreditLimit}</p>
+                </div>  
+            </lightning-layout-item>
+
+        </lightning-layout>
+    </div>
+</template>

@@ -1,0 +1,14 @@
+<aura:component implements="forceCommunity:availableForAllPageTypes,force:appHostable" access="global" >
+	    <aura:attribute name="flowName" type="String" />
+	    <aura:handler name="init" value="{!this}" action="{!c.init}" />
+    
+    <!--div class="slds-card card" style="background-color:rgb(18,55,104);border-style:none" aura:id="card" -->
+    <div style="background-color:rgb(231,231,240);border-style:none;padding:0.25rem;margin:0.75rem;border-radius: 12px;">
+        <lightning:flow aura:id="flowData"/>
+    </div>
+    	<!--div class="slds-card card" style="background-color:rgb(255,255,255);border-style:none;padding:0px;margin:0px;border-radius: 12px;" aura:id="card">    
+    	<div style="width:100%;padding:0px;margin:0px ">
+    	<lightning:flow aura:id="flowData" />
+		</div>
+    </div-->    
+</aura:component>

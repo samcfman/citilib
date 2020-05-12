@@ -1,0 +1,51 @@
+<template>
+ 
+    <div class="slds-p-around_none slds-m-top_none slds-m-bottom_none slds-m-horizontal_none">
+        <lightning-layout>
+            <lightning-layout-item size="12" class="slds-p-bottom_small">
+                <template if:false={showEdit}>
+                        <p class="citi-field-label">PHONE NUMBERS</p>
+                        <c-citi-field-read-mode
+                            label="Mobile"
+                            value={citiPhoneMobile}
+                        ></c-citi-field-read-mode> 
+                        <c-citi-field-read-mode
+                            label="Home"
+                            value={citiPhoneHome}
+                        ></c-citi-field-read-mode>    
+
+                        <c-citi-field-read-mode
+                            label="Office"
+                            value={citiPhoneOffice}
+                        ></c-citi-field-read-mode>    
+
+                        <button type="button" onclick={handleEdit} class="citi-action-button" >Edit</button>
+                </template>
+
+                <template if:true={showEdit}>
+                    <p class="citi-field-label">PHONE NUMBERS</p>
+                    <c-citi-field-edit-mode
+                        label="Mobile"
+                        value={citiPhoneMobile}
+                        onvaluechange={handleValueChangeEvent}
+                    ></c-citi-field-edit-mode> 
+                    <c-citi-field-edit-mode
+                        label="Home"
+                        value={citiPhoneHome}
+                        onvaluechange={handleValueChangeEvent}
+                    ></c-citi-field-edit-mode> 
+
+                    <c-citi-field-edit-mode
+                        label="Office"
+                        value={citiPhoneOffice}
+                        onvaluechange={handleValueChangeEvent}
+                    ></c-citi-field-edit-mode> 
+
+                    <button type="button" onclick={handleApply} class="citi-edit-button">OK</button>
+                    <button type="button" onclick={handleCancel} class="citi-edit-button">Cancel</button>
+            </template>
+            </lightning-layout-item>
+        </lightning-layout> 
+    </div>       
+
+</template>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>48.0</apiVersion>
+    <isExposed>true</isExposed>
+    <masterLabel>Citi Mailing Address</masterLabel>
+    <description>Display Mailing Address</description>
+    <targets>
+        <target>lightning__FlowScreen</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightning__FlowScreen">
+            <property name="relatedRecordId" type="String" label="Related Record"/>
+            <property name="uploadDescription" type="String" label="Upload Description"/>
+            <property name="uploadLabel" type="String" label="Upload Upload Label"/>
+            <property name="uploadFileId" type="String" label="Upload File ID"/>
+            <property name="address2" type="String" label="Address2"/>
+            <property name="address1" type="String" label="Address1"/>
+            <property name="address3" type="String" label="Address3"/>
+            <property name="city" type="String" label="City"/>
+            <property name="postCode" type="String" label="Post Code"/>
+            <property name="isChanged" type="Boolean" label="Is Changed?"/>
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>

@@ -1,0 +1,21 @@
+{
+    "records": [
+        {
+            "attributes": {
+                "type": "Account",
+                "referenceId": "AccountRef11"
+            },
+            "PersonMobilePhone": "+65 94573382",
+            "Office_Phone__c": "+65 6302 5700",
+            "PersonHomePhone": "+65 67772345",
+            "FirstName": "Julie",
+            "LastName": "Morris",
+            "Citi_Mailing_Address_1__c": "#16-02 Asia Square Tower 3",
+            "Citi_Mailing_Address_2__c": "8 Marina View",
+            "Citi_City__c": "Singapore",
+            "Citi_Postal_Code__c": "018975",
+            "PersonEmail": "juliemorris.sf@gmail.com",
+            "Secondary_Email__c": "juliemorris.sf@demo.com"
+        }
+    ]
+}

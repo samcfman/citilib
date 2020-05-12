@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>48.0</apiVersion>
+    <isExposed>true</isExposed>
+    <masterLabel>Citi Credit Card CVV Validation</masterLabel>
+    <description>Input of Credit Card CVV for validation</description>
+    <targets>
+        <target>lightning__AppPage</target>
+        <target>lightning__RecordPage</target>
+        <target>lightning__HomePage</target>
+        <target>lightning__FlowScreen</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightning__FlowScreen">
+            <property name="cardNumber" type="String" label="Card Number"/>
+            <property name="otp" type="String" label="OTP"/>
+            <property name="cvv" type="String" label="CVV"/>
+            <property name="isCardLogin" type="String" label="Is Card Login"/>
+            <property name="authenticationStatus" type="Boolean" label="Authentication Status"/>
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>

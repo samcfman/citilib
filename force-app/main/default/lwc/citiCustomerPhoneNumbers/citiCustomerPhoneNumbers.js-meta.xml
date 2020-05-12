@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>48.0</apiVersion>
+    <isExposed>true</isExposed>
+    <masterLabel>Citi Phone Numbers</masterLabel>
+    <description>Display Phones Numbers</description>
+    <targets>
+        <target>lightningCommunity__Default</target>
+        <target>lightning__FlowScreen</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightning__FlowScreen, lightningCommunity__Default">
+            <property name="citiPhoneMobile" type="String" default="" label="Mobile"/>
+            <property name="citiPhoneHome" type="String" default="" label="Home"/>
+            <property name="citiPhoneOffice" type="String" default="" label="Office"/>
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>

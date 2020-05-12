@@ -1,0 +1,14 @@
+<template>
+    <div class="slds-p-around_none slds-m-top_none slds-m-bottom_none slds-m-horizontal_none">
+        <lightning-layout>
+            <lightning-layout-item size="12" class="slds-p-bottom_small">
+                <lightning-input class="citi-edit-box" type="text" 
+                id="edit1"
+                value={value}
+                label="value" variant="label-hidden"  onchange={handleOnInputChange} 
+                placeholder={label}
+                ></lightning-input>                
+           </lightning-layout-item>
+        </lightning-layout> 
+    </div>
+</template>

@@ -1,0 +1,15 @@
+<template>
+    <div>
+        <lightning-tile class="citiFieldTileEditMode">
+
+            <p class="citiFieldLabelEditMode">{label}</p>     
+
+            <lightning-input class="citi-edit-box" type="text" 
+            id="edit1"
+            value={value}
+            label="value" variant="label-hidden"  onchange={handleOnInputChange} 
+            ></lightning-input>
+            
+        </lightning-tile>  
+    </div>    
+</template>

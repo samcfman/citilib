@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>48.0</apiVersion>
+    <isExposed>true</isExposed>
+    <masterLabel>Citi Next Button</masterLabel>
+    <description>Proceed to next step</description>
+    <targets>
+        <target>lightningCommunity__Default</target>
+        <target>lightning__FlowScreen</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightning__FlowScreen, lightningCommunity__Default">
+            <property name="buttonlabel" type="String" default="" label="Enter the button label"/>
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>

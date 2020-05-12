@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+
+  <types>
+    <members>CitiAccount</members>
+    <members>CitiAccountController</members>
+    <members>CitiAddress</members>
+    <members>CitiAuthController</members>
+    <members>CitiAuthSession</members>
+    <name>ApexClass</name>
+  </types>
+
+  <types>
+     <members>Service_Request__c</members>
+     <members>Account</members>     
+     <name>CustomObject</name>
+  </types>
+
+  <types>
+    <members>Account.Citi_City__c</members>
+    <members>Account.Citi_Mailing_Address_1__c</members>
+    <members>Account.Citi_Mailing_Address_2__c</members>
+    <members>Account.Citi_Mailing_Address_3__c</members>
+    <members>Account.Citi_Postal_Code__c</members>
+    <members>Account.Office_Phone__c</members>  
+    <members>Account.Secondary_Email__c</members>    
+    <members>Service_Request__c.Account__c</members>
+    <members>Service_Request__c.Address_1__c</members>
+    <members>Service_Request__c.Address_2__c</members>
+    <members>Service_Request__c.Address_3__c</members>
+    <members>Service_Request__c.City__c</members>
+    <members>Service_Request__c.Employer__c</members>
+    <members>Service_Request__c.Home__c</members>
+    <members>Service_Request__c.Mobile__c</members>
+    <members>Service_Request__c.Nature_of_Business__c</members>
+    <members>Service_Request__c.Occupation__c</members>
+    <members>Service_Request__c.Office__c</members>
+    <members>Service_Request__c.Postal_Code__c</members>
+    <members>Service_Request__c.Primary_Email__c</members>
+    <members>Service_Request__c.Secondary_Email__c</members>
+    <members>Service_Request__c.Service_Type__c</members>  
+
+    <name>CustomField</name>
+  </types>
+
+  <types>
+    <members>Service_Request_Record_Page</members>
+    <name>FlexiPage</name>
+  </types>  
+
+    <types>
+       <members>citiFlow</members>
+        <name>AuraDefinitionBundle</name>
+    </types>  
+
+  <types>
+    <members>citiAccountTest</members>
+    <members>citiAck</members>
+    <members>citiAddressFieldReadMode</members>
+    <members>citiAuthenticationCardCVV</members>
+    <members>citiAuthenticationIDInput</members>
+    <members>citiAuthenticationTest</members>
+    <members>citiButtonBack</members>
+    <members>citiButtonCancel</members>
+    <members>citiButtonHome</members>
+    <members>citiButtonNext</members>
+    <members>citiCustomerBalance</members>
+    <members>citiCustomerEmailAddress</members>
+    <members>citiCustomerMailingAddress</members>
+    <members>citiCustomerName</members>
+    <members>citiCustomerPhoneNumbers</members>
+    <members>citiDisplayText</members>
+    <members>citiFieldEdit</members>
+    <members>citiFieldEditMode</members>
+    <members>citiFieldLabel</members>
+    <members>citiFieldReadMode</members>
+    <members>citiFileUpload</members>
+    <members>citiHeader</members>
+    <members>citiOTPVerify</members>
+    <name>LightningComponentBundle</name>
+  </types>
+
+  <types>  
+      <members>citicss</members>
+      <members>creditScoreImg</members>
+      <members>cititick</members>      
+    <name>StaticResource</name>
+  </types>   
+
+  <types>
+    <members>LEXTHEMINGCitibank</members>
+    <name>BrandingSet</name>
+  </types>
+
+ <types>
+    <members>Citibank</members>
+    <name>LightningExperienceTheme</name>
+  </types>    
+
+
+  <types>
+    <members>citiAuthenticationFlow</members>
+    <members>citi_demo</members>
+    <members>Citi_Increase_Credit_Limit</members>
+    <members>Citi_SR_Flow_Template</members>
+    <members>CitiUpdateAddress_Test</members>
+ 
+    <name>Flow</name>
+    </types>
+
+
+  <types>
+    <members>citiAuthenticationFlow</members>
+    <members>citi_demo</members>
+    <members>Citi_Increase_Credit_Limit</members>
+    <members>Citi_SR_Flow_Template</members>
+    <members>CitiUpdateAddress_Test</members> 
+    <name>FlowDefinition</name>
+  </types>
+
+    <version>48.0</version>
+</Package>

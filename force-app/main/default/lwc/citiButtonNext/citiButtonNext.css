@@ -1,0 +1,12 @@
+.citi-next-button {
+    background-color:  rgb(18,55,104);
+    border: 2px;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    text-decoration: none;
+    border-radius: 12px;
+    width: 100%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}

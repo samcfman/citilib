@@ -1,0 +1,11 @@
+{
+  "orgName": "sman company",
+  "edition": "Developer",
+  "features": ["PersonAccounts", "Communities"],
+  "settings": {
+    "communitiesSettings": {
+      "enableNetworksEnabled": true
+    }  
+
+  }  
+}

@@ -1,0 +1,16 @@
+<template>
+    <div>
+        <lightning-tile class="citi-Field-Tile">
+            <p class="citiAddressline">{address1},</p>
+            <template if:true={address2}>
+                <p class="citiAddressline">{address2},</p>
+            </template>
+
+            <template if:true={address3}>
+                <p class="citiAddressline">{address3},</p>
+            </template>
+
+            <p class="citiAddressline">{city}, {postal}</p>   
+        </lightning-tile>  
+    </div>        
+</template>
