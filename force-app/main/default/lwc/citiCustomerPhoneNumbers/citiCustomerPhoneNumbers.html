@@ -28,17 +28,23 @@
                         label="Mobile"
                         value={citiPhoneMobile}
                         onvaluechange={handleValueChangeEvent}
+                        pattern={citiPhoneMobilePattern}
+                        msgpatternmismatch={msgpatternmismatchmobile}
                     ></c-citi-field-edit-mode> 
                     <c-citi-field-edit-mode
                         label="Home"
                         value={citiPhoneHome}
                         onvaluechange={handleValueChangeEvent}
+                        pattern={citiPhoneHomePattern}
+                        msgpatternmismatch={msgpatternmismatchhome}
                     ></c-citi-field-edit-mode> 
 
                     <c-citi-field-edit-mode
                         label="Office"
                         value={citiPhoneOffice}
                         onvaluechange={handleValueChangeEvent}
+                        pattern={citiPhoneOfficePattern}
+                        msgpatternmismatch={msgpatternmismatchoffice}
                     ></c-citi-field-edit-mode> 
 
                     <button type="button" onclick={handleApply} class="citi-edit-button">OK</button>

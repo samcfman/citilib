@@ -10,6 +10,9 @@
         <targetConfig targets="lightning__FlowScreen, lightningCommunity__Default">
             <property name="label" type="String" default="" label="Label"/>
             <property name="value" type="String" default="" label="Value Field"/>
+            <property name="pattern" type="string"  label="pattern"/>
+            <property name="msgpatternmismatch" type="string"  label="pattern"/>       
+
         </targetConfig>
     </targetConfigs>
 </LightningComponentBundle>

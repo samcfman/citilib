@@ -11,8 +11,19 @@
     <targetConfigs>
         <targetConfig targets="lightning__FlowScreen, lightningCommunity__Default">
             <property name="citiPhoneMobile" type="String" default="" label="Mobile"/>
+            <property name="citiPhoneMobilePattern" type="String" default="" label="Mobile Pattern"/>
+
+            <property name="msgpatternmismatchmobile" type="string"  label="message when pattern mismatch - Mobile"/>
+            
             <property name="citiPhoneHome" type="String" default="" label="Home"/>
+            <property name="citiPhoneHomePattern" type="String" default="" label="Home Pattern"/>
+            <property name="msgpatternmismatchhome" type="string"  label="message when pattern mismatch - Home"/>
+
             <property name="citiPhoneOffice" type="String" default="" label="Office"/>
+             <property name="citiPhoneOfficePattern" type="String" default="" label="Office Pattern"/>
+             <property name="msgpatternmismatchoffice" type="string"  label="message when pattern mismatch - Office"/>
+
+
         </targetConfig>
     </targetConfigs>
 </LightningComponentBundle>

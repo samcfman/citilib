@@ -8,6 +8,13 @@ export default class CitiCmpHelloWorld extends LightningElement {
     @api citiPhoneMobile;
     @api citiPhoneHome;
     @api citiPhoneOffice;
+    @api citiPhoneOfficePattern;
+    @api msgpatternmismatchoffice;
+    @api citiPhoneHomePattern;
+    @api msgpatternmismatchhome;
+    @api citiPhoneMobilePattern;
+    @api msgpatternmismatchmobile;
+
 
    // @api showEdit = false;
 
