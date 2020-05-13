@@ -1,14 +1,13 @@
 import { LightningElement, api } from 'lwc';
 
-export default class CitiFieldEdit extends LightningElement {
+export default class CitiEmail extends LightningElement {
 
     @api label;
     @api value;
     @api readonly=false;
     @api required=false;
-    @api pattern;
-    @api msgpatternmismatch;
-    @api maxinputlength;
+    @api msgmismatch;
+
 
     handleOnInputChange(event){
         this.value = event.target.value;

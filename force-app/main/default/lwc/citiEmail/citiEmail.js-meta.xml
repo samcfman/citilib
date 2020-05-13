@@ -2,8 +2,8 @@
 <LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
     <apiVersion>48.0</apiVersion>
     <isExposed>true</isExposed>
-    <masterLabel>Citi Edit Box</masterLabel>
-    <description>Edit Box</description>
+    <masterLabel>Citi Email Edit</masterLabel>
+    <description>Email Edit</description>
     <targets>
         <target>lightning__FlowScreen</target>
     </targets>
@@ -13,9 +13,8 @@
             <property name="value" type="String" default="" label="Value Field"/>
             <property name="readonly" type="boolean"  label="read-only"/>
             <property name="required" type="boolean"  label="required"/> 
-            <property name="pattern" type="string"  label="pattern"/>
-            <property name="msgpatternmismatch" type="string"  label="message when pattern mismatch"/>
-            <property name="maxinputlength" type="string"  label="max length"/>	
+            <property name="msgmismatch" type="String" default="" label="Type Mismatch Error Message"/>
+            	
         </targetConfig>
     </targetConfigs>
 </LightningComponentBundle>
